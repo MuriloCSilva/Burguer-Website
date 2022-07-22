@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/stylesheet1.css">
+    <title>Restarante</title>
+</head>
+<body onload="onLoadPage()">
+    <header class="nav-header">
+        <a href="./index.html"><img src="./images/logo_withoutBackground.png" alt="" class="logo-header"></a>
+        <span class="material-icons" id="menu-icon">menu</span>
+        <div class="navbar">
+            <a href="#home" class="navbar-link active">Home</a>
+            <a href="#sobre" class="navbar-link">Sobre</a>
+            <a href="#pedido" class="navbar-link">Pedido</a>
+            <a href="" class="navbar-link">Contato</a>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-apresentation">
+            <div class="home-text">
+                <h1>O MELHOR HAMBURGUER DA REGIÃO</h1>
+                <h2>Aproveite o melhor hambuerguer da região, com a melhor qualidade e o melhor preço!</h2>
+                <button class="buy-button-home">Comprar</button>
+            </div>
+        </div>
+        <div class="home-hambuerguer-image">
+            <img src="./images/hamburguerPNG1.png" alt="">
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="card-criador">
+            <h2>Nosso Criador</h2>
+            <img src="./images/netao.webp" alt="">
+            <h3>Netão Bom Beef</h3>
+        </div>
+        <div class="about-text">
+            <span>Sobre nós</span>
+            <h2>O amor pelo hamburguer</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab ipsum quasi itaque consequatur, reprehenderit fugiat exercitationem, amet, dolorum accusantium aliquam. Libero necessitatibus assumenda voluptatibus quo facilis vitae deleniti ducimus.</p>
+        </div>
+    </section>
+    <section class="pedido" id="pedido">
+        <div class="header-pedidos">
+            <span>Menu</span>
+            <h1>Melhor sabor e ótimo oreço <span class="material-icons">shopping_cart</span></h1>
+        </div>
+        <form class="container-pedidos" action="pedido.php" method="get">
+            <div class="card-pedidos">
+                <img src="./images/refrigerantes.png" alt="">
+                <h2>Refrigerantes</h2>
+                <span class="preço">$3.00</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos1"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount1" name="a" value="0" />
+                    <div class="mais" id="mais1"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images//suco.png" alt="">
+                <h2>Sucos</h2>
+                <span class="preço">$5.50</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos2"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount2" name="b" value="0"/>
+                    <div class="mais" id="mais2"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/cervejas2.png" alt="">
+                <h2>Cervejas</h2>
+                <span class="preço">$6.00</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos3"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount3" name="c" value="0"/>
+                    <div class="mais" id="mais3"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/hambuerguer1.png" alt="">
+                <h2>X-Salada</h2>
+                <span class="preço">$7.50</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos4"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount4" name="d" value="0"/>
+                    <div class="mais" id="mais4"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/hamburguer2.png" alt="">
+                <h2>X-Burguer</h2>
+                <span class="preço">$9.00</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos5"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount5" name="e" value="0"/>
+                    <div class="mais" id="mais5"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/hamburguer3.png" alt="">
+                <h2>X-Bacon</h2>
+                <span class="preço">$15.00</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos6"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount6" name="f" value="0"/>
+                    <div class="mais" id="mais6"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+        </div>
+        <button class="finalizarPedido" type="submit" align="center">Finalizar Pedido</button>
+        </form>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
